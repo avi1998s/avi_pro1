@@ -1,0 +1,204 @@
+.container-fluid{
+    width: 95%;
+    display: flex;
+    margin-left: 2.5%;
+}
+.container{
+    width: 900px;
+    max-width: 100%;
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+body{
+    margin: 0;
+    background-color: silver;
+}
+header{
+    position: relative;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    height: 65vh;
+    color: rgb(14, 186, 186);
+    
+}
+header>img{
+    display: block;
+    position: absolute;
+    border-top: 5px silver solid;
+    border-bottom: 5px rgb(14, 186, 186) solid;
+    top: 0px;
+    display: inline-block;
+    width: 98vw;
+    height: 40vh;
+}
+header .box{
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    bottom: 6px;
+    left: 40%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto; 
+    align-items: center;
+}
+header .box>img{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    border: 4px rgb(14, 186, 186) solid;
+}
+header .box>p{
+    margin: 0px;
+}
+header .box>h2{
+    margin-top : 16px;
+    margin-bottom : 2px;
+}
+header .logo{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 4px rgb(14, 186, 186) solid;
+}
+#logos{
+    gap: 25px;
+    text-align: center;
+    margin-top: 8px;
+    display: flex;
+}
+header .down{
+    gap: 25px;
+}
+footer{
+    padding: 16px 0;
+    gap: 16px;
+    height: 65vh;
+    margin-top: 16px;
+    display: flex;
+}
+footer h2,h3{
+    text-align: right;
+    margin: 16px;
+}
+.left{
+    width: 75%;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+
+}
+.left #div1{
+    width: 100%;
+    background-color: rgb(254, 254, 254);
+    height: 30%;
+    padding: 1px;
+}
+.left #div1 .center{
+    gap: 8px;
+}
+footer .nraund{
+    border: 4px rgb(14, 186, 186) solid;
+    border-radius: 20%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(14, 186, 186);
+}
+footer .raund{
+    border: 4px rgb(14, 186, 186) solid;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(14, 186, 186);
+}
+.left #div2{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    height: 70%;
+    padding: 1px;
+    flex-direction: column;
+    gap: 16px;
+}
+#div2 .container{
+    width: 95%;
+    
+}
+#div2 input{
+    width: 50%;
+    height: 25px;
+}
+#inputBox{
+    gap: 16px;
+}
+#div2 textarea{
+    width: 100%;
+    height: 140px;
+}
+#div2 button{
+    background-color: rgb(14, 186, 186);
+    color: white;
+    width: 50px;
+    height: 40px;
+}
+.right{
+    width: 25%;
+    background-color: rgb(251, 251, 251);
+    max-height: 475px;
+    padding: 8px;
+}
+@media screen and (max-width:1260px){
+    footer{
+        flex-direction: column;
+    }
+    .right,.left{
+        width: 100%;
+    }
+}
+@media screen and (max-width:700px) {
+    header .box{
+        left: 150px;
+    }
+    
+}
+@media screen and (max-width:560px) {
+
+    header .box{
+        left: 80px;
+    }
+}
+@media screen and (max-width:481px) {
+
+    header .box{
+        left: 60px;
+    }
+}
+@media screen and (max-width:421px) {
+    header{
+        height: 600px;
+    }
+    header .box{
+        top: 290px;
+        left: 30px;
+    }
+    header #logos{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-height:421px){
+
+}
+
+

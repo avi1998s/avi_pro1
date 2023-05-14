@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+    
+}body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 0;
+    font-family: sans-serif;
+}.container-fluid{
+    width: 100%;
+}.container{
+    width: 900px;
+    max-width: 100%;
+    margin: 0px auto;
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+header{
+    height: 5em;
+    background: linear-gradient(to right, rgb(38, 0, 255) 0%, rgb(0, 0, 0) 21%, rgb(0, 23, 200) 32%, rgb(34, 32, 33) 49%, rgb(1, 97, 252) 64%, rgb(67, 61, 102) 81%); 
+    color: white;
+    position: sticky;
+    top: 0;
+    width: 100;
+}
+header img{
+    height: 5em;
+}
+header .container{
+    display: flex;
+    align-items: center;
+}
+header a{
+    color: white;
+    text-decoration: none;
+    padding: 0 8px;
+
+}
+header input{
+    margin-left: auto;
+    border-radius: 10px;
+    
+}
+.strip{
+    position: relative;
+    z-index: -5;
+
+}
+.strip img{
+    width: 100%;
+    height: 100%;
+}
+.strip h1{
+    position: absolute;
+    bottom: -1px;
+    z-index: 5;
+}
+main{
+    background: linear-gradient(45deg, rgb(29, 187, 195) 0%, rgb(183, 181, 199) 7%, rgb(13, 192, 208) 31%, rgb(149, 148, 166) 54%, rgb(14, 188, 198) 85%, rgb(103, 101, 127) 100%);
+    min-height:300px;
+    margin-top:-3px;
+    padding: 16px;
+}
+main .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .box{
+    background-color: aliceblue;
+    width: 20%;
+    text-align: center;
+    
+}
+main .box h3{
+    background-color: aqua;
+    margin: 0;
+}
+
+footer{
+    min-height: 180px;
+    background-color: rgb(33, 13, 106);
+    color: aliceblue;
+    padding: 16px;
+}
+footer .container{
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+footer .box{
+    display:flex;
+    width: 20%;
+    text-align: center;
+    flex-wrap: wrap;
+}
+footer .box h4{
+    background-color: gray;
+    width: 100%;
+    margin: 0;
+    padding: 5px;
+}
+footer .box ul{
+    text-align: left; 
+    font-family: monospace;
+}
+footer .box a{
+    color: aliceblue;
+    text-decoration: none;
+}
+footer .container img{
+    margin-left: 150px;
+}
+@media screen and (max-width:728px){
+    main .container{
+        flex-wrap: wrap;
+    }
+    main .box{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    header nav {
+        display: none;
+    }
+    header input {
+        display: none;
+    }
+}
